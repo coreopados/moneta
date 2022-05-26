@@ -1,0 +1,64 @@
+header {
+    height: 230px;
+    background: $light-blue;
+    display: flex;
+    align-items: center;
+
+    .wrap-header {
+        display: grid;
+        grid-template-columns: minmax(100px, 150px) minmax(675px, 1fr) minmax(150px, 1fr);
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+
+        nav {
+            display: flex;
+            align-items: center;
+
+            .menu-wrap {
+                display: flex;
+                font-size: 16px;
+
+
+                li {
+                    margin-right: 10px;
+
+                    a {
+                        padding: 3px 10px;
+                        border-radius: 10px;
+                        border: 2px solid transparent;
+                        transition: 0.2s;
+                        white-space: nowrap;
+                    }
+
+                    a:hover {
+                        border: 2px solid $green;
+                        transition: 0.2s;
+
+                    }
+                }
+
+                li:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .reg-buttons {
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 120px);
+            grid-gap: 10px;
+            justify-content: flex-end;
+
+            .register-button {
+                background: none;
+            }
+
+            .login-button {
+                background: $green;
+            }
+        }
+
+    }
+}

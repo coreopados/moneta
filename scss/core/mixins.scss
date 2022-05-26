@@ -1,0 +1,28 @@
+.btn {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid $violet;
+    cursor: pointer;
+}
+
+
+.grey__border {
+    border: 2px solid #fbfbfc;
+    transition: 0.2s;
+}
+
+.grey__border:hover {
+    border: 2px solid $green;
+    transition: 0.2s;
+}
+
+.green__border {
+    border: 2px solid $green;
+}
+
+.green__border:hover {
+    border: 2px solid #fbfbfc;
+    transition: 0.2s;
+}
